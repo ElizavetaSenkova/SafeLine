@@ -48,4 +48,18 @@ $(function() {
 
 	// assortment-slider
 
+	// menu
+
+	$('.page-header__open-menu').click(function() {
+		$('.page-header__nav-wrapper').show();
+		$('.overlay').show();
+	});
+
+	$('.page-header__close-menu').click(function() {
+		$('.page-header__nav-wrapper').hide();
+		$('.overlay').hide();
+	});
+
+	// menu
+
 });

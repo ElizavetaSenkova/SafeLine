@@ -1,11 +1,11 @@
 .parameters
-	padding-bottom: 50px
+	padding-bottom: 60px
 
 	position: relative
 	.custom-dots
 		position: absolute
-		top: -54px
-		right: 354px
+		top: 34px
+		right: 0
 		z-index: 10
 		.slick-dots
 			margin: 0
@@ -85,6 +85,9 @@
 				
 				border: none
 				background-color: $blue
+	&__inner
+		max-width: 1320px
+		margin: 0 auto
 	&__title
 		width: 500px
 		margin-top: 50px
@@ -111,7 +114,7 @@
 		align-items: center
 	&__slide-title
 		margin: 0
-		padding: 12px 110px
+		padding: 12px 37px
 
 		font-size: 30px
 		line-height: 1.55
@@ -128,4 +131,26 @@
 		color: white
 
 		background-color: $yellow
+
+	// mobile
+
+	&__moile-title
+		display: none
+		h2
+			color: $yellow
+			font-size: 30px
+			line-height: 1.55
+			font-weight: bold
+			letter-spacing: 0.5px
+			text-align: center
+		p
+			width: 100%
+
+			color: $blue
+			font-size: 18px
+			line-height: 1.55
+			font-weight: 500
+			letter-spacing: 1px
+
+	// mobile
 

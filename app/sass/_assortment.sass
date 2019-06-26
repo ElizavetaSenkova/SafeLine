@@ -1,5 +1,8 @@
 .assortment
 	position: relative
+	&__inner
+		max-width: 1320px
+		margin: 0 auto
 	.custom-dots2
 		position: absolute
 		top: 214px
@@ -44,8 +47,6 @@
 	&__slide
 		width: 100%
 		height: 880px
-		padding-left: 400px
-		padding-right: 590px
 
 		position: relative
 		&::before
@@ -150,6 +151,7 @@
 		display: flex
 		flex-wrap: wrap
 		justify-content: space-between
+		width: 726px
 		margin: 0
 		padding: 0
 
@@ -169,6 +171,7 @@
 		display: flex
 		justify-content: space-between
 		align-items: center
+		width: 1000px
 		p
 			font-size: 16px
 			line-height: 1.55
@@ -198,9 +201,6 @@
 			height: 380px
 		
 	// Индикаторная отвертка
-	&__slider-indicator
-		padding-left: 356px
-		padding-right: 460px
 	&__screwdriver-title
 		width: 600px
 		padding-top: 50px
@@ -225,6 +225,7 @@
 			background-color: $yellow
 	&__screwdriver
 		display: flex
+		flex-wrap: wrap
 		justify-content: space-around
 		margin-bottom: 40px
 

@@ -23,6 +23,10 @@
 
 <body>
 
+	<div class="overlay"></div>
+
+	<div class="inner">
+
 		<!-- HEADER -->
 		<header class="page-header">
 			<div class="page-header__inner">
@@ -37,13 +41,21 @@
 							</a>
 						</div>
 
-						<div class="col-lg-5">
+						<div class="col-lg-5 page-header__menu-wrapper">
+							<button class="page-header__open-menu" type="button">
+								<img src="img/header/open-menu.svg" alt="" width="25px" height="25px">
+								<span>МЕНЮ</span>
+							</button>
+						</div>
+
+						<div class="col-lg-5 page-header__nav-wrapper">
+							<button class="page-header__close-menu" type="button"><img src="img/header/close-menu.png" alt="" width="24px" height="24px"></button>
 							<ul class="page-header__nav">
 								<li class="page-header__item"><a href="#" class="page-header__link">О продукции</a></li>
 								<li class="page-header__item"><a href="#" class="page-header__link">Ассортимент</a></li>
 								<li class="page-header__item"><a href="#" class="page-header__link">Отзывы</a></li>
 								<li class="page-header__item"><a href="#" class="page-header__link">Где купить</a></li>
-								<li class="page-header__item"><a href="#" class="page-header__link">Контакты</a></li>
+								<li class="page-header__item"><a href="contacts.html" class="page-header__link">Контакты</a></li>
 							</ul>
 						</div>
 
@@ -69,15 +81,15 @@
 			<div class="preview">
 				<div class="row">
 
-					<div class="col-lg-4">
+					<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 preview__tapes-ad">
 						<img class="preview__tape-prof" src="img/header/tape.png" alt="Изолента профессионала">
 					</div>
 
-					<div class="col-lg-4">
-						<img class="preview__tape-big" src="img/preview/preview-tape.png" alt="">
+					<div class="col-xl-4 preview__tape-big">
+						<img src="img/preview/preview-tape.png" alt="">
 					</div>
 
-					<div class="col-lg-4">
+					<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 preview__tapes-ad">
 						<a class="preview__main" href="#">
 
 							<p>ГЛАВНОЕ<br> О SAFELINE<br> ЗА 1 МИНУТУ</p>
@@ -109,8 +121,12 @@
 
 			<section class="parameters">
 
+				<div class="custom-dots"></div>
+
+				<div class="parameters__inner">
+
 				<div class="row">
-					<div class="col-lg-12 offset-lg-2">
+					<div class="col-lg-12">
 						<h1 class="parameters__title">
 								ТЕХНИЧЕСКИЕ ХАРАКТЕРИСТИКИ
 						</h1>
@@ -118,8 +134,8 @@
 				</div>
 
 				<div class="row">
-					<div class="col-12 offset-lg-2">
-						<div class="custom-dots"></div>
+					<div class="col-lg-12">
+						<!-- <div class="custom-dots"></div> -->
 						<div id="parameters__slider">
 							
 							<!-- 1 slide -->
@@ -134,6 +150,7 @@
 									<h2 class="parameters__slide-title">Высокая адгезия (липкость)</h2>
 									<a class="parameters__slide-btn" href="#">БОЛЬШЕ<br> ИНФОРМАЦИИ</a>
 								</div>
+
 							</div>
 							
 							<!-- 2 slide -->
@@ -148,6 +165,31 @@
 										<h2 class="parameters__slide-title">Напряжение пробоя 6000В</h2>
 										<a class="parameters__slide-btn" href="#">БОЛЬШЕ<br> ИНФОРМАЦИИ</a>
 									</div>
+
+									<!-- mobile -->
+
+								<div class="col-lg-12 parameters__moile-title">
+									<h2>НАПРЯЖЕНИЕ НА ПРОБОЙ</h2>
+									<p>
+										Единица измерения — Вольт. Определяет максимальное напряжение, 
+										которое выдерживает  один слой изоленты. 
+									</p>
+									<p>
+										Напряжение на пробой изоленты SAFELINE, при ее толщине в 0,15 мм,  составляет 6000 Вольт.
+										 Этот параметр напрямую зависит от напряжения пробоя материала, из которого изготовлена
+											 изолента (ПВХ-основы). Единица измерения - Вольт/мм. Изолента разной толщины,  
+											 выполненная из одного и того же материала, будет иметь разное напряжение на пробой –  
+											 чем изолента толще, тем больше напряжение, которое она выдерживает. 
+									</p>
+									<p>
+										У большинства изолент, представленных на рынке, толщина колеблется в пределах 0,13 мм,
+										  соответственно напряжение на пробой у них будет меньше.
+									</p>
+
+								</div>
+
+								<!-- mobile -->
+
 								</div>
 
 							<!-- 3 slide -->
@@ -162,6 +204,25 @@
 										<h2 class="parameters__slide-title">Сохраняет свойства от –50°C до +80°C</h2>
 										<a class="parameters__slide-btn" href="#">БОЛЬШЕ<br> ИНФОРМАЦИИ</a>
 									</div>
+
+									<!-- mobile -->
+
+								<div class="col-lg-12 parameters__moile-title">
+									<h2>РАБОТА В РАЗНЫХ ТЕМПЕРАТУРАХ</h2>
+									<p>
+											По требованиям ГОСТ, изолента должна сохранять свои характеристики в различных  температурных 
+											условиях: от -50 °С до +70 °С.  Все серии изолент SAFELINE обладают высокой термоустойчивостью,
+											 и сохраняют свои  свойства в температурном диапазоне выше нормы: от -50 °C до +80 °C.SAFELINE 
+											 можно использовать, не опасаясь ни суровых сибирских морозов, ни палящего  зноя южных регионов,
+												при этом изолента полностью и без ущерба выполняет свои функции:  достаточную электрическую 
+												изоляцию, надежное фиксирование жгутов проводов и  маркировку.  Большое количество изолент, 
+												представленных на рынке, имеют температурный диапазон  меньше требований ГОСТ. Будьте 
+												внимательны при выборе изоленты.  
+									</p>
+								</div>
+
+								<!-- mobile -->
+
 								</div>
 
 							<!-- 4 slide -->
@@ -176,6 +237,27 @@
 										<h2 class="parameters__slide-title">Растягивается на 200%</h2>
 										<a class="parameters__slide-btn" href="#">БОЛЬШЕ<br> ИНФОРМАЦИИ</a>
 									</div>
+
+									<!-- mobile -->
+
+								<div class="col-lg-12 parameters__moile-title">
+									<h2>ПРОЧНОСТЬ ПРИ РАСТЯЖЕНИИ</h2>
+									<p>
+											Единица измерения — Мпа, и относительное удлинение при разрыве (единица измерения — %) — 
+											характеризуют эластичность ленты. Чем выше эластичные свойства ленты, тем качественнее 
+											выполняется процесс жгутирования и удобнее работать с изолентой. Обычно ленту наматывают 
+											с 50%-ным перекрытием, при этом натяжение должно быть достаточным для обеспечения равномерной 
+											намотки, а разрыв при окончании работ должен происходить без излишних затруднений и не 
+											оставлять сильно рваных краев. За это и отвечают 2 технических параметра изоленты: 
+											прочность при растяжении и относительное удлинение при разрыве, а ещё точнее – правильно 
+											подобранное соотношение их величин. Прочность при растяжении изоляционной ленты 
+											SAFELINE достигает 15 МПа, а ее относительное удлинение не менее 200%. В этом Вы 
+											можете убедиться самостоятельно. 
+									</p>
+								</div>
+
+								<!-- mobile -->
+
 								</div>
 
 							<!-- 5 slide -->
@@ -190,6 +272,25 @@
 										<h2 class="parameters__slide-title">Не поддерживает горение</h2>
 										<a class="parameters__slide-btn" href="#">БОЛЬШЕ<br> ИНФОРМАЦИИ</a>
 									</div>
+
+									<!-- mobile -->
+
+								<div class="col-lg-12 parameters__moile-title">
+									<h2>НЕ ГОРЮЧЕСТЬ</h2>
+									<p>
+										Простейший тест на качество изоленты – горючесть. Качественная изолента должна затухать 
+										 сразу после вынесения ее из открытого пламени. В Российской Федерации действует 
+										 Межгосударственный стандарт ГОСТ 16214-86, регламентирующий технические требования и 
+										 требования безопасности электроизоляционных лент ПВХ. Согласно этим требованиям, 
+										 изоляционная лента не должна поддерживать горение, если мы видим обратное, то перед 
+										 нами, не что иное, как ее суррогат.  В отличие от таких вот «изоляционных лент», 
+										 которыми сегодня наводнен рынок, SAFELINE не только не поддерживает горение, но 
+										 и по большинству своих параметров превосходит требования ГОСТ к изолентам Высшего сорта. 
+									</p>
+								</div>
+
+								<!-- mobile -->
+
 								</div>
 
 
@@ -198,13 +299,18 @@
 								</div>
 							</div>
 
+				</div>
 			</section>
 
 			<section class="assortment">
 
+				<div class="custom-dots2"></div>
+
+				<div class="assortment__inner">
+
 			<div class="row">
 				<div class="col-12">
-					<div class="custom-dots2"></div>
+					<!-- <div class="custom-dots2"></div> -->
 					<div id="assortment__slider">
 						
 						<!-- 1 slide -->
@@ -485,6 +591,7 @@
 
 							</div>
 						</div>
+				</div>
 			</section>
 
 			<section class="comments">
@@ -611,7 +718,7 @@
 			</div>
 		</footer>
 		<!-- FOOTER -->
-
+	</div>
 
 	<script src="js/scripts.min.js"></script>
 </body>

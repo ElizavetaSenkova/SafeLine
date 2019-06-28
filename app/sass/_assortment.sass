@@ -179,13 +179,19 @@
 			color: $blue
 	&__addition-good
 		display: flex
-		align-items: center
-		width: 340px
-		img
-			width: 170px
-			height: 160px
-		p
-			width: 32%
+		justify-content: space-around
+		margin: 0
+		padding: 0
+		list-style: none
+		li
+			display: flex
+			align-items: center
+			width: 340px
+			img
+				width: 170px
+				height: 160px
+			p
+				width: 32%
 
 	// auto
 	&__img-auto
@@ -257,6 +263,7 @@
 		width: 430px
 		height: 240px
 	&__screwdriver-text
+		width: 100%
 		padding-bottom: 30px
 
 		font-size: 18px
@@ -265,7 +272,9 @@
 		color: #103775
 	&__screwdriver-wrapper
 		display: flex
+		flex-wrap: wrap
 		justify-content: space-between
+		width: 100%
 		p
 			width: 200px
 			padding-top: 15px

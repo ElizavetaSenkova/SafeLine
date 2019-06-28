@@ -142,7 +142,9 @@
 							<div class="slide parameters__slide row" data-title="Высокая адгезия">
 								<div class="col-lg-12">
 										<div class="anim-wrap tapes" style="width: 960px; height:495px;">
-											<canvas id="canvas" style="background-color:#FFFFFF;"></canvas>
+
+												
+											<canvas id="canvas1" style="background-color:#FFFFFF;"></canvas>
 											<div class="anim-title"></div>
 										</div>
 								</div>
@@ -157,7 +159,7 @@
 							<div class="slide parameters__slide row" data-title="Напряжение пробоя">
 									<div class="col-lg-12">
 										<div class="anim-wrap tapes" style="width: 960px; height:495px;">
-											<canvas id="canvas" style="background-color:#FFFFFF;"></canvas>
+											<canvas id="canvas2" style="background-color:#FFFFFF;"></canvas>
 											<div class="anim-title"></div>
 										</div>
 									</div>
@@ -196,7 +198,7 @@
 							<div class="slide parameters__slide row" data-title="Диапазон рабочих температур">
 									<div class="col-lg-12">
 										<div class="anim-wrap tapes" style="width: 960px; height:495px;">
-											<canvas id="canvas" style="background-color:#FFFFFF;"></canvas>
+											<canvas id="canvas3" style="background-color:#FFFFFF;"></canvas>
 											<div class="anim-title"></div>
 										</div>
 									</div>
@@ -229,7 +231,7 @@
 							<div class="slide parameters__slide row" data-title="Относительное удлинение при разрыве">
 									<div class="col-lg-12">
 										<div class="anim-wrap tapes" style="width: 960px; height:495px;">
-											<canvas id="canvas" style="background-color:#FFFFFF;"></canvas>
+											<canvas id="canvas4" style="background-color:#FFFFFF;"></canvas>
 											<div class="anim-title"></div>
 										</div>
 									</div>
@@ -264,7 +266,7 @@
 							<div class="slide parameters__slide row" data-title="Пожаробезопасность">
 									<div class="col-lg-12">
 										<div class="anim-wrap tapes" style="width: 960px; height:495px;">
-											<canvas id="canvas" style="background-color:#FFFFFF;"></canvas>
+											<canvas id="canvas5" style="background-color:#FFFFFF;"></canvas>
 											<div class="anim-title"></div>
 										</div>
 									</div>
@@ -396,7 +398,7 @@
 								</div>
 							</div>
 
-							<div class="col-lg-12">
+							<div class="col-lg-12 assortment__addition-inner">
 
 								<h3 class="assortment__addition">2 цвета</h3>
 
@@ -404,15 +406,19 @@
 
 									<p class="assortment__addition-name">Изолента в шоу-боксах</p>
 
-									<div class="assortment__addition-good">
+									<ul class="assortment__addition-good">
+
+									<li>
 										<img src="img/assortment/pro/color-ad-1.png" alt="">
 										<p>Шоу-бокс с синей изолентой 15х20 (36 шт.) </p>
-									</div>
+									</li>
 
-									<div class="assortment__addition-good">
+									<li>
 										<img src="img/assortment/pro/color-ad-2.png" alt="">
 										<p>Шоу-бокс с чёрной изолентой 19х20 (28 шт.)</p>
-									</div>
+									</li>
+
+								</ul>
 
 								</div>
 
@@ -697,21 +703,22 @@
 		<footer class="page-footer">
 			<div class="row">
 
-				<div class="col-lg-2">
+				<div class="col-xl-2 col-lg-2 col-md-3 col-sm-3 col-12">
 					<a href="https://www.rosel.ru/" class="page-footer__logo">
 						<img src="img/footer/logo-footer.png" alt="" width="77px" height="102px">
 					</a>
 				</div>
 
-				<div class="col-lg-3 offset-lg-1">
+				<div class="col-xl-3 offset-xl-1 col-lg-3 offset-lg-0 col-md-4 offset-md-2 col-sm-4 offset-sm-2 col-12">
 					<p class="page-footer__text">
 							197101, Петроградская наб., дом 36 лит. А,<br> 
 							офис 303, Санкт-Петербург, Россия<br>
 							Телефон +7 (812) 320-83-33
 					</p>
+					<a href="#" class="page-footer__feedback-mobile">ОБРАТНАЯ СВЯЗЬ</a>
 				</div>
 
-				<div class="col-lg-2 offset-lg-2">
+				<div class="col-xl-2 offset-xl-2 col-lg-2 offset-lg-2 col-12 page-footer__feedback-desktop">
 					<a href="#" class="page-footer__feedback">ОБРАТНАЯ СВЯЗЬ</a>
 				</div>
 
@@ -720,6 +727,83 @@
 		<!-- FOOTER -->
 	</div>
 
+	<!-- POPUPS -->
+
+	<!-- POPUPS -->
+
 	<script src="js/scripts.min.js"></script>
+	<script src="http://code.createjs.com/easeljs-0.7.0.min.js"></script>
+	<script src="http://code.createjs.com/tweenjs-0.5.0.min.js"></script>
+	<script src="http://code.createjs.com/movieclip-0.7.0.min.js"></script>
+	<script src="http://code.createjs.com/preloadjs-0.4.0.min.js"></script>
+	<script>
+			$().ready( function() {
+
+			 
+					init(1);  
+					//init(2);  
+					//init(3);  
+					 
+			});
+
+ 
+
+			
+			var canvas, stage, exportRoot, current, dir, deff,loader = [],
+					anim_elems = [
+							0,
+							{title:'Высокая адгезия (липкость)', link:'Высокая адгезия (липкость)', w:'1600', h:'755', t:'-260px', l:'-320px'},
+							{title:'Напряжение пробоя 6000В', link:'Напряжение пробоя 6000В', w:'1592', h:'840', t:'-268px', l:'-427px'},
+							{title:'Сохраняет свойства от –50°C до +80°C', link:'Сохраняет свойства до –50°C', w:'1600', h:'840', t:'-249px', l:'-448px'},
+							{title:'Не поддерживает горение', link:'Самозатухающая', w:'1600', h:'840', t:'-287px', l:'-438px'},
+							{title:'Растягивается на 200%', link:'Растягивается на 200%', w:'1600', h:'840', t:'-280px', l:'-418px'}
+					];
+
+	 
+
+					
+
+			function init(elId) { 
+				
+					dir = 'assets/tape/images/'+elId+'/';
+					$.getScript('/assets/tape/izolenta_'+ elId +'.js', function() {
+							canvas = document.getElementById("canvas"+elId);
+							$(canvas).attr({
+									'width': anim_elems[elId].w,
+									'height': anim_elems[elId].h
+							});
+							$(canvas).css({
+										'margin-top': anim_elems[elId].t,
+										'margin-left': anim_elems[elId].l
+							});
+						//	$('.anim-title').text(anim_elems[elId].title);
+						//	$('.anim-menu-elem[data-id="'+elId+'"]').text(anim_elems[elId].link).addClass('active').siblings().removeClass('active').text('');
+							images[elId] = images||{};
+
+							 loader[elId] = new createjs.LoadQueue(false);
+							loader[elId].addEventListener("fileload", handleFileLoad);
+							loader[elId].addEventListener("complete", function() {handleComplete(elId)});
+							loader[elId].loadManifest(lib.properties.manifest);
+					});
+			}
+
+			function handleFileLoad(evt) {
+					if (evt.item.type == "image") { images[evt.item.id] = evt.result; }
+			}
+
+			function handleComplete(id) {
+				
+				exportRoot = new lib.izolenta();
+					console.log(id);
+					stage = new createjs.Stage(canvas);
+					stage.addChild(exportRoot);
+					stage.update();
+
+					createjs.Ticker.setFPS(lib.properties.fps);
+					createjs.Ticker.addEventListener("tick", stage);
+					//deff[1].resolve();
+					//$("#canvas"+id).css({'margin-top':anim_elems[id].t,'margin-left':anim_elems[id].l});
+			}
+	</script>
 </body>
 </html>

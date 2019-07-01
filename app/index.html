@@ -60,7 +60,7 @@
 						</div>
 
 						<div class="col-lg-5 page-header__enter-tape">
-							<a href="" class="page-header__enter">Вход для партнеров</a>
+							<a href="entry.html" class="page-header__enter">Вход для партнеров</a>
 							<ul class="page-header__tape-list">
 									<li><img class="page-header__tape-prof" src="img/header/tape.png" alt="Изолента профессионала"></li>
 									<li><img class="page-header__pro" src="img/header/pro.png" alt="PRO"></li>
@@ -90,13 +90,28 @@
 					</div>
 
 					<div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 preview__tapes-ad">
-						<a class="preview__main" href="#">
+						<a class="preview__main popup-with-form" href="#slide_preview">
 
 							<p>ГЛАВНОЕ<br> О SAFELINE<br> ЗА 1 МИНУТУ</p>
 
 							<div class="preview__main-btn"></div>
 
 						</a>
+					</div>
+
+					<div class="popup-preview mfp-hide white-popup-block" id="slide_preview">
+						<div class="popup-preview__inner">
+
+							<div class="t-width t-width_10" data-video-width="960" data-video-height="540">
+
+								<video width="960" height="540" autoplay="" controls="controls" muted="muted">
+									<source src="video/video.mp4" type="video/mp4; codecs=&quot;avc1.42E01E, mp4a.40.2&quot;">
+									<source src="video/video-webm.webm" type="video/webm; codecs=&quot;vp8, vorbis&quot;">
+								</video>
+
+							</div>
+
+						</div>
 					</div>
 
 				</div>
@@ -140,18 +155,60 @@
 							
 							<!-- 1 slide -->
 							<div class="slide parameters__slide row" data-title="Высокая адгезия">
+
 								<div class="col-lg-12">
 										<div class="anim-wrap tapes" style="width: 960px; height:495px;">
-
-												
 											<canvas id="canvas1" style="background-color:#FFFFFF;"></canvas>
 											<div class="anim-title"></div>
 										</div>
 								</div>
+
+								<div class="parameters__gost">
+									<a href="#" class="parameters__gost-link">
+										<ul class="parameters__gost-list">
+											<li><img src="img/parameters/top-grade.png" alt="" width="216px" height="155px"></li>
+											<li><img src="img/parameters/GOST.png" alt="" width="216px" height="155px"></li>
+											<li><img src="img/parameters/GOST-sign.png" alt="" width="80px" height="82px"></li>
+										</ul>
+									</a>
+								</div>
+
 								<div class="col-lg-12 parameters__info">
 									<h2 class="parameters__slide-title">Высокая адгезия (липкость)</h2>
-									<a class="parameters__slide-btn" href="#">БОЛЬШЕ<br> ИНФОРМАЦИИ</a>
+									<a class="parameters__slide-btn popup-with-form" href="#slide_form-height">БОЛЬШЕ<br> ИНФОРМАЦИИ</a>
 								</div>
+
+								<div class="col-lg-12 parameters__info-block">
+									<h1>ВЫСОКАЯ АДГЕЗИЯ</h1>
+									<p>
+										Качество работы с изолентой зависит от качества ее липкого слоя – адгезии (от лат. 
+										adhaesio — прилипание) — «сила сцепления». Адгезионные свойства изоленты определяются 
+										двумя основными параметрами: толщиной и типом клеевого слоя. Толщина клеевого слоя SAFELINE
+										составляет 15 микрон. Клеевой слой определяет липкость изоленты. В данном случае важен тип
+										клеевого состава: акриловый или каучуковый. Разница между клеевыми составами в том, что для
+										лент с акриловым слоем сила адгезионной связи возрастает со временем. А для лент с 
+										каучуковым слоем, как у SAFELINE, полная адгезия достигается практически мгновенно.
+									</p>
+								</div>
+
+								<!-- slide-popup -->
+								<div class="slide-popup mfp-hide white-popup-block" id="slide_form-height">
+									<div class="slide-popup__inner">
+
+										<h1>ВЫСОКАЯ АДГЕЗИЯ</h1>
+										<p>
+											Качество работы с изолентой зависит от качества ее липкого слоя – адгезии (от лат. 
+											adhaesio — прилипание) — «сила сцепления». Адгезионные свойства изоленты определяются 
+											двумя основными параметрами: толщиной и типом клеевого слоя. Толщина клеевого слоя SAFELINE
+											составляет 15 микрон. Клеевой слой определяет липкость изоленты. В данном случае важен тип
+											клеевого состава: акриловый или каучуковый. Разница между клеевыми составами в том, что для
+											лент с акриловым слоем сила адгезионной связи возрастает со временем. А для лент с 
+											каучуковым слоем, как у SAFELINE, полная адгезия достигается практически мгновенно.
+										</p>
+
+									</div>
+								</div>
+								<!-- slide-popup -->
 
 							</div>
 							
@@ -163,10 +220,50 @@
 											<div class="anim-title"></div>
 										</div>
 									</div>
+
+									<div class="parameters__gost">
+									<a href="#" class="parameters__gost-link">
+										<ul class="parameters__gost-list">
+											<li><img src="img/parameters/top-grade.png" alt="" width="216px" height="155px"></li>
+											<li><img src="img/parameters/GOST.png" alt="" width="216px" height="155px"></li>
+											<li><img src="img/parameters/GOST-sign.png" alt="" width="80px" height="82px"></li>
+										</ul>
+									</a>
+								</div>
+
 									<div class="col-lg-12 parameters__info">
 										<h2 class="parameters__slide-title">Напряжение пробоя 6000В</h2>
-										<a class="parameters__slide-btn" href="#">БОЛЬШЕ<br> ИНФОРМАЦИИ</a>
+										<a class="parameters__slide-btn popup-with-form" href="#slide_form-voltage">БОЛЬШЕ<br> ИНФОРМАЦИИ</a>
 									</div>
+
+									<!-- slide-popup -->
+								<div class="slide-popup mfp-hide white-popup-block" id="slide_form-voltage">
+										<div class="slide-popup__inner">
+	
+											<h1>НАПРЯЖЕНИЕ НА ПРОБОЙ</h1>
+											<p>
+												Единица измерения — Вольт. Определяет максимальное напряжение, которое выдерживает один слой изоленты. 
+											</p>
+
+											<p>
+												Напряжение на пробой изоленты SAFELINE, при ее толщине в 0,15 мм, составляет 6000 Вольт. Этот параметр
+												напрямую зависит от напряжения пробоя материала, из которого изготовлена изолента (ПВХ-основы). Единица 
+												измерения - Вольт/мм. Изолента разной толщины, выполненная из одного и того же материала, будет иметь 
+												разное напряжение на пробой – чем изолента толще, тем больше напряжение, которое она выдерживает. 
+											</p>
+
+											<p>
+												У большинства изолент, представленных на рынке, толщина колеблется в пределах 0,13 мм, соответственно
+												напряжение на пробой у них будет меньше.
+											</p>
+
+											<p>
+												SAFELINE является надежным изоляционным материалом при электротехнических работах.
+											</p>
+	
+										</div>
+									</div>
+									<!-- slide-popup -->
 
 									<!-- mobile -->
 
@@ -202,10 +299,43 @@
 											<div class="anim-title"></div>
 										</div>
 									</div>
+
+									<div class="parameters__gost">
+											<a href="#" class="parameters__gost-link">
+												<ul class="parameters__gost-list">
+													<li><img src="img/parameters/top-grade.png" alt="" width="216px" height="155px"></li>
+													<li><img src="img/parameters/GOST.png" alt="" width="216px" height="155px"></li>
+													<li><img src="img/parameters/GOST-sign.png" alt="" width="80px" height="82px"></li>
+												</ul>
+											</a>
+										</div>
+
 									<div class="col-lg-12 parameters__info">
 										<h2 class="parameters__slide-title">Сохраняет свойства от –50°C до +80°C</h2>
-										<a class="parameters__slide-btn" href="#">БОЛЬШЕ<br> ИНФОРМАЦИИ</a>
+										<a class="parameters__slide-btn popup-with-form" href="#slide_form-temperature">БОЛЬШЕ<br> ИНФОРМАЦИИ</a>
 									</div>
+
+										<!-- slide-popup -->
+								<div class="slide-popup mfp-hide white-popup-block" id="slide_form-temperature">
+										<div class="slide-popup__inner">
+	
+											<h1>РАБОТА В РАЗНЫХ ТЕМПЕРАТУРАХ</h1>
+											<p>
+												По требованиям ГОСТ, изолента должна сохранять свои характеристики в различных температурных условиях:
+												от -50 °С до +70 °С. Все серии изолент SAFELINE обладают высокой термоустойчивостью, и сохраняют свои 
+												свойства в температурном диапазоне выше нормы: от -50 °C до +80 °C. 
+											</p>
+
+											<p>
+												SAFELINE можно использовать, не опасаясь ни суровых сибирских морозов, ни палящего зноя южных регионов,
+												при этом изолента полностью и без ущерба выполняет свои функции: достаточную электрическую изоляцию, 
+												надежное фиксирование жгутов проводов и маркировку. Большое количество изолент, представленных на рынке,
+												имеют температурный диапазон меньше требований ГОСТ. Будьте внимательны при выборе изоленты.
+											</p>
+	
+										</div>
+									</div>
+									<!-- slide-popup -->
 
 									<!-- mobile -->
 
@@ -235,10 +365,41 @@
 											<div class="anim-title"></div>
 										</div>
 									</div>
+
+									<div class="parameters__gost">
+											<a href="#" class="parameters__gost-link">
+												<ul class="parameters__gost-list">
+													<li><img src="img/parameters/top-grade.png" alt="" width="216px" height="155px"></li>
+													<li><img src="img/parameters/GOST.png" alt="" width="216px" height="155px"></li>
+													<li><img src="img/parameters/GOST-sign.png" alt="" width="80px" height="82px"></li>
+												</ul>
+											</a>
+										</div>
+
 									<div class="col-lg-12 parameters__info">
 										<h2 class="parameters__slide-title">Растягивается на 200%</h2>
-										<a class="parameters__slide-btn" href="#">БОЛЬШЕ<br> ИНФОРМАЦИИ</a>
+										<a class="parameters__slide-btn popup-with-form" href="#slide_form-elongation">БОЛЬШЕ<br> ИНФОРМАЦИИ</a>
 									</div>
+
+										<!-- slide-popup -->
+								<div class="slide-popup mfp-hide white-popup-block" id="slide_form-elongation">
+										<div class="slide-popup__inner">
+	
+											<h1>ПРОЧНОСТЬ ПРИ РАСТЯЖЕНИИ</h1>
+											<p>
+												Единица измерения — Мпа, и относительное удлинение при разрыве (единица измерения — %) — характеризуют 
+												эластичность ленты. Чем выше эластичные свойства ленты, тем качественнее выполняется процесс жгутирования 
+												и удобнее работать с изолентой. Обычно ленту наматывают с 50%-ным перекрытием, при этом натяжение должно быть
+												достаточным для обеспечения равномерной намотки, а разрыв при окончании работ должен происходить без излишних 
+												затруднений и не оставлять сильно рваных краев. За это и отвечают 2 технических параметра изоленты: прочность
+												при растяжении и относительное удлинение при разрыве, а ещё точнее – правильно подобранное соотношение их 
+												величин. Прочность при растяжении изоляционной ленты SAFELINE достигает 15 МПа, а ее относительное удлинение 
+												не менее 200%. В этом Вы можете убедиться самостоятельно.
+											</p>
+	
+										</div>
+									</div>
+									<!-- slide-popup -->
 
 									<!-- mobile -->
 
@@ -270,10 +431,40 @@
 											<div class="anim-title"></div>
 										</div>
 									</div>
+
+									<div class="parameters__gost">
+											<a href="#" class="parameters__gost-link">
+												<ul class="parameters__gost-list">
+													<li><img src="img/parameters/top-grade.png" alt="" width="216px" height="155px"></li>
+													<li><img src="img/parameters/GOST.png" alt="" width="216px" height="155px"></li>
+													<li><img src="img/parameters/GOST-sign.png" alt="" width="80px" height="82px"></li>
+												</ul>
+											</a>
+										</div>
+
 									<div class="col-lg-12 parameters__info">
 										<h2 class="parameters__slide-title">Не поддерживает горение</h2>
-										<a class="parameters__slide-btn" href="#">БОЛЬШЕ<br> ИНФОРМАЦИИ</a>
+										<a class="parameters__slide-btn popup-with-form" href="#slide_form-fire">БОЛЬШЕ<br> ИНФОРМАЦИИ</a>
 									</div>
+
+									<!-- slide-popup -->
+								<div class="slide-popup mfp-hide white-popup-block" id="slide_form-fire">
+										<div class="slide-popup__inner">
+	
+											<h1>НЕ ГОРЮЧЕСТЬ</h1>
+											<p>
+												Простейший тест на качество изоленты – горючесть. Качественная изолента должна затухать сразу после
+												вынесения ее из открытого пламени. В Российской Федерации действует Межгосударственный стандарт ГОСТ
+												16214-86, регламентирующий технические требования и требования безопасности электроизоляционных лент
+												ПВХ. Согласно этим требованиям, изоляционная лента не должна поддерживать горение, если мы видим 
+												обратное, то перед нами, не что иное, как ее суррогат. В отличие от таких вот «изоляционных лент», 
+												которыми сегодня наводнен рынок, SAFELINE не только не поддерживает горение, но и по большинству своих
+												параметров превосходит требования ГОСТ к изолентам Высшего сорта.
+											</p>
+	
+										</div>
+									</div>
+									<!-- slide-popup -->
 
 									<!-- mobile -->
 

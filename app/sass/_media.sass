@@ -90,8 +90,15 @@
 						display: none
 				&__info
 					display: none
+				&__info-block
+					display: block
+					max-width: 800px
+					margin: 0 auto
 				&__moile-title
 					display: block
+				&__gost
+					display: none
+				
 
 
 @media (max-width: 1346px) 
@@ -164,6 +171,13 @@
 			.comments
 				max-width: 800px
 
+@media (max-width: 1250px) 
+	.inner
+		.page-content
+			.authorization
+				&__inner
+					max-width: 576px
+
 // ≥1200px
 +media-breakpoint-down(lg)
 	.overlay
@@ -198,10 +212,18 @@
 				font-size: 20px
 			&__menu-wrapper
 				display: block
+				button
+					margin-left: 50px
+
+					background-color: inherit
+					border: none
 			&__close-menu
 				display: block
 				margin-left: 340px
 				margin-top: 20px
+
+				background-color: inherit
+				border: none
 
 
 	.preview
@@ -219,6 +241,13 @@
 				.tpl-default-uikit
 					padding-left: 0
 					justify-content: flex-start
+			
+			.agreement
+				&__title
+					width: 576px
+					&::before
+						right: 162px
+						top: 58px
 
 		.page-footer
 			&__feedback-desktop
@@ -314,11 +343,27 @@
 		.page-header
 			&__enter-tape
 				display: none
+			&__nav-wrapper
+				width: 320px
+			&__close-menu
+				margin-left: 260px
+			&__menu-wrapper
+				button
+					margin-left: 0
 
 		.page-content
+
+			.authorization
+				&__inner
+					max-width: 320px
+				&__title
+					font-size: 19px	
+				.form_auth
+					width: 320px
+
 			.parameters
 				.custom-dots
-					width: 320px
+					width: 297px
 
 					top: 135px
 					.slick-dots
@@ -351,19 +396,24 @@
 	
 				&__inner
 					max-width: 320px
+					div
+						margin: 0 auto
 				&__title
 					margin-bottom: 186px
 
 					font-size: 28px
 					&::before
 						top: 31px
-						right: 8px
+						right: -3px
 
 			.assortment
 				&::before
 					height: 1740px
 				&__slide
 					height: 1740px
+					div
+						width: 320px
+						margin: 0 auto
 				.custom-dots2
 					width: 320px
 					.slick-dots
@@ -425,7 +475,7 @@
 						right: 10px
 						top: 72px
 				&__circle
-					width: 70px
+					width: 70px !important
 					height: 70px
 
 					top: 20px
@@ -468,6 +518,12 @@
 					&::before
 						right: 40px
 						top: 108px
+			.agreement
+				&__title
+					width: 320px
+					&::before
+						right: 162px
+						top: 150px
 
 		.page-footer
 			display: flex
@@ -488,7 +544,7 @@
 
 	.popup-feedback
 		&__inner
-			width: 320px
+			width: 306px
 				
 
 

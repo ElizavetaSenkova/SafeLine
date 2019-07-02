@@ -5,7 +5,7 @@
 	.custom-dots
 		position: absolute
 		top: 34px
-		right: 0
+		right: -91px
 		z-index: 10
 		.slick-dots
 			margin: 0
@@ -21,6 +21,8 @@
 
 				border-top: 5px solid $yellow
 				background-color: $blue
+				&:hover
+					right: calc(100% - 391px + 1px)
 			li:nth-child(2)::before
 				content: ""
 
